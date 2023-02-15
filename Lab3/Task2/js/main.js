@@ -1,14 +1,16 @@
 const form =document.querySelector('#form');
 const taskInput = document.querySelector('#taskInput');
+const tasksList = document.querySelector('#tasksList');
+const emptyList = document.querySelector('#emptyList');
 console.log("Im JS");
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', addTask());
+function addTask(e){
     e.preventDefault();
     const taskText =taskInput.value;
     console.log(taskText);
     const taskHTML = `<li class="list-group-item d-flex justify-content-between task-item">
     <!-- <p style="font-size:small; color:rgb(173, 171, 171)">Пример:</p> -->
-    <small id="emailHelp" class="form-text text-muted">Пример:</small>
-    <span class="task-title">Пробежать 3 км</span>
+    <span class="task-title" style="text-align: center;">${taskText}</span>
     <div class="task-item__buttons">
         <button type="button" data-action="done" class="btn-action">
             <img src="img/tick.svg" alt="Done" width="18" height="18">
@@ -17,5 +19,11 @@ form.addEventListener('submit', function(e) {
             <img src="img/cross.svg" alt="Done" width="18" height="18">
         </button>
     </div>
-</li>`
-})
+</li>`;
+    tasksList.insertAdjacentHTML('beforeend', taskHTML);
+    taskInput.value = "";
+    taskInput.focus();
+    if(tasksList.children.length>1){
+        emptyList.classList.add('none');
+    }
+}
