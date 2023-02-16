@@ -33,4 +33,7 @@ function deleteTask(e){
         const parentNode = e.target.closest('.list-group-item');
         parentNode.remove();
     }
+    if(tasksList.children.length===1){
+        emptyList.classList.remove('none');
+    }
 }
