@@ -9,16 +9,16 @@ tasksList.addEventListener('click', doneTask);
 function addTask(e){
     e.preventDefault();
     const taskText =taskInput.value;
-    console.log(taskText);
+    // console.log(taskText);
     const taskHTML = `<li class="list-group-item d-flex justify-content-between task-item">
     <!-- <p style="font-size:small; color:rgb(173, 171, 171)">Пример:</p> -->
     <span class="task-title" style="text-align: center;">${taskText}</span>
     <div class="task-item__buttons">
         <button type="button" data-action="done" class="btn-action">
-            <img src="img/tick.svg" alt="Done" width="18" height="18">
+            <img src="img/tick.png" alt="Done" width="18" height="18">
         </button>
         <button type="button" data-action="delete" class="btn-action">
-            <img src="img/cross.svg" alt="Done" width="18" height="18">
+            <img src="img/cross.png" alt="Done" width="18" height="18">
         </button>
     </div>
 </li>`;
