@@ -42,5 +42,8 @@ function doneTask(e){
     
     if (e.target.dataset.action === "done"){
         // console.log('Done');
+        const parentNode = e.target.closest('.list-group-item');
+        const taskTitle = parentNode.querySelector('.task-title');
+        taskTitle.classList.add('task-title--done');
     }
 }
