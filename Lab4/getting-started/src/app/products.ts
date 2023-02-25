@@ -67,19 +67,20 @@ export const products: Product[] = [
   {
     id : 7,
     name : 'Blender Fresh Juice Blend12 white',
-    price: 70,
+    price: 11800,
     description: 'usefull for expluatation',
     rating: 5,
-    link: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/ha5/h51/69222679281694/fresh-juice-portable-blender-stakan-blend12-belyi-prozrachnyi-105722831-1.jpg',
-    img: ''
+    link: 'https://kaspi.kz/shop/p/fresh-juice-blend12-belyi-105722831/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/ha5/h51/69222679281694/fresh-juice-portable-blender-stakan-blend12-belyi-prozrachnyi-105722831-1.jpg'
   },
   {
     id : 8,
-    name : 'Mouse Asus',
-    price: 70,
+    name : 'Egg cooker WMF 415020711 black',
+    price: 63000,
     description: 'usefull for expluatation',
     rating: 5,
-    link: ''
+    link: 'https://kaspi.kz/shop/p/wmf-415020711-chernyi-105100238/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6c/h75/51180441763870/wmf-415020711-cernyj-105100238-1.jpg'
   },
   {
     id : 9,
@@ -87,14 +88,16 @@ export const products: Product[] = [
     price: 70,
     description: 'usefull for expluatation',
     rating: 5,
-    link: ''
+    link: 'https://kaspi.kz/shop/p/lg-f2j3hs4l-serebristyi-3601603/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/h56/31753168060446/lg-f2j3hs4l-serebristyj-3601603-1.jpg'
   },
   {
     id : 10,
-    name : 'Mouse Asus',
-    price: 70,
+    name : 'Washing machine LG F2J3HS4L silver',
+    price: 219200,
     description: 'usefull for expluatation',
     rating: 5,
-    link: ''
+    link: 'https://kaspi.kz/shop/p/lg-f2j3hs4l-serebristyi-3601603/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/h56/31753168060446/lg-f2j3hs4l-serebristyj-3601603-1.jpg'
   }
 ];
