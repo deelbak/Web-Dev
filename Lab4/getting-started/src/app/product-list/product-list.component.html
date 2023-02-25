@@ -13,10 +13,8 @@
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
+<a  type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
 
-  <button type="button" (click)="share()">
-    Share
-  </button>
 
   <app-product-alerts
     [product]="product"
