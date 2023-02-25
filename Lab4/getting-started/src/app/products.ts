@@ -84,12 +84,12 @@ export const products: Product[] = [
   },
   {
     id : 9,
-    name : 'Mouse Asus',
-    price: 70,
+    name : 'Phone holder',
+    price: 2300,
     description: 'usefull for expluatation',
     rating: 5,
-    link: 'https://kaspi.kz/shop/p/lg-f2j3hs4l-serebristyi-3601603/?c=750000000#!/item',
-    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/h56/31753168060446/lg-f2j3hs4l-serebristyj-3601603-1.jpg'
+    link: 'https://kaspi.kz/shop/p/mulu-ysd-29-108118871/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/ha0/h74/67059505070110/mulu-ysd-29-108118871-1.jpg'
   },
   {
     id : 10,
