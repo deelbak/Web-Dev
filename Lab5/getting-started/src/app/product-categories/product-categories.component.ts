@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-categories.component.css']
 })
 export class ProductCategoriesComponent {
-
+  categories = [...categories];
 }

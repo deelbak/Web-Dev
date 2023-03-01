@@ -1,2 +1,9 @@
 <h1>Categories</h1>
 
+<div *ngFor = "let category of Categories">
+    <fieldset>
+        <h3><a  [title]="category.name" routerLink]="['/category', category.name]"></a></h3>
+        {{ category.name}}
+    </fieldset>
+
+</div>
