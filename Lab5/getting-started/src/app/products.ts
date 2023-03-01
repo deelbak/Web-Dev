@@ -242,5 +242,16 @@ Likes: 0
     img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3f/hb0/62637312868382/stol-pismennyj-komputernyj-106541589-1.jpg',
     category: 'Furniture',
     Likes: 0
+  },
+  {
+    id : 22,
+    name : 'Maxwell MW-1650 coffee maker black',
+    price: 10800,
+    description: 'usefull for expluatation',
+    rating: 5,
+    link: 'https://kaspi.kz/shop/p/kofevarka-maxwell-mw-1650-chernyi-4400189/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hdb/hb7/50194011226142/maxwell-mw-1650-cernyj-4400189-1-Container.jpg',
+    category: 'Appliances',
+    Likes: 0
   }
 ];
