@@ -231,5 +231,16 @@ Likes: 0
     img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h91/h1d/46392661737502/apple-iphone-13-128gb-sinij-102298364-1-Container.jpg',
     category : 'Phones',
     Likes: 0
+  },
+  {
+    id : 21,
+    name : 'Desk Arapbek 114x40x140 cm stolpis002',
+    price: 21200,
+    description: 'usefull for expluatation',
+    rating: 5,
+    link: 'https://kaspi.kz/shop/p/arapbek-114x40x140-sm-stolpis002-106541589/?c=750000000#!/item',
+    img: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3f/hb0/62637312868382/stol-pismennyj-komputernyj-106541589-1.jpg',
+    category: 'Furniture',
+    Likes: 0
   }
 ];
