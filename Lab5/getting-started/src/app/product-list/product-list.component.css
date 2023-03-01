@@ -3,3 +3,23 @@
     height: 260px;
     margin-left: 60px;
 }
+/* .container2 {
+     /* set width to 100% of viewport width */
+    /* border: 1px solid black; add border for visual reference */
+    /* flex-shrink: 0; prevent the divs from shrinking */
+    /* width: 100px; set the width of each div to your desired size */
+  /* } */
+  
+  /* .container2 > div {
+    flex-shrink: 0; /* prevent the divs from shrinking */
+    /* width: 100px; set the width of each div to your desired size */
+  /* } */ 
+.container1{
+    /* display: flex; */
+    flex-wrap: nowrap;
+    /* width: 100vw; */
+    width:350px; 
+    height:520px; 
+    border: 1px solid gray; 
+    margin-top: 20px;
+}

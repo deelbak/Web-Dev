@@ -1,28 +1,30 @@
 <h2>Products</h2>
 
 <div *ngFor="let product of products">
-  <div style="width:350px; height:520px; border: 1px solid gray; margin-top: 20px;">
-    <h3 style="margin-left:5px;">
-      <a
-        [title]="product.name + ' details'"
-        [routerLink]="['/products', product.id]">
-        {{ product.name }}
-      </a>
-    </h3>
-    <img class="product-list-img" src="{{product.img}}" >
-      <p style="margin-left:5px;" *ngIf="product.description">
-        Description: {{ product.description }}
-      </p>
-    <a style="margin-left:5px;" type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
+  <!-- <div class="container2"> -->
+    <div class = "container1">
+      <h3 style="margin-left:5px;">
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]">
+          {{ product.name }}
+        </a>
+      </h3>
+      <img class="product-list-img" src="{{product.img}}" >
+        <p style="margin-left:5px;" *ngIf="product.description">
+          Description: {{ product.description }}
+        </p>
+      <a style="margin-left:5px;" type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
 
-    <button style="margin-left:5px;" (click)="removeProduct(product.id)">remove</button>
-    <button style="margin-left:5px;" (click)="likedProducts(product)">like {{product.Likes}}</button>
+      <button style="margin-left:5px;" (click)="removeProduct(product.id)">remove</button>
+      <button style="margin-left:5px;" (click)="likedProducts(product)">like {{product.Likes}}</button>
 
-    <div style="margin-left:5px;">
-      <app-product-alerts
-        [product]="product"
-        (notify)="onNotify()">
-      </app-product-alerts>
+      <div style="margin-left:5px;">
+        <app-product-alerts
+          [product]="product"
+          (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
     </div>
-  </div>
+  <!-- </div> -->
 </div>
