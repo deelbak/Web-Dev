@@ -1,9 +1,11 @@
-<h1>Categories</h1>
+<h1>Find Your <span>Perfect</span> Plant</h1>
 
-<div *ngFor = "let category of Categories">
+<div *ngFor = "let category of categories">
     <fieldset>
-        <h3><a  [title]="category.name" routerLink]="['/category', category.name]"></a></h3>
-        {{ category.name}}
+         <h3><a  
+            [title]="category.name" 
+            [routerLink]="['/category', category.name]">
+            {{ category.name}} </a></h3>
     </fieldset>
-
+   
 </div>

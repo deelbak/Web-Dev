@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductCategoriesComponent } from './product-categories/product-categories.component';
+// import { CategoriesComponent } from './categories/categories.component';
 
 
 @NgModule({
@@ -20,8 +21,8 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/categories', component: ProductCategoriesComponent },
+      { path: '', component: ProductCategoriesComponent},
+      { path: 'category/:categoryName', component: ProductListComponent  },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
@@ -35,6 +36,7 @@ import { ProductCategoriesComponent } from './product-categories/product-categor
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
+    ProductCategoriesComponent,
     ProductCategoriesComponent
   ],
   bootstrap: [

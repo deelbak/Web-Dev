@@ -9,11 +9,13 @@
       {{ product.name }}
     </a>
   </h3>
-<img src="{{product.img}}" width = "100px" height="140px">
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
-<a  type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
+  <img class="product-list-img" src="{{product.img}}" >
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+  <a  type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
+  <button  (click)="removeProduct(product.id)">remove</button>
+  <button  (click)="likedProducts(product)">like {{product.Likes}}</button>
 
 
   <app-product-alerts
