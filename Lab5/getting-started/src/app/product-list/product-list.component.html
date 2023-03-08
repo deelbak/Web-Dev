@@ -14,7 +14,7 @@
           <p style="margin-left:5px;" *ngIf="product.description">
             Description: {{ product.description }}
           </p>
-        <a style="margin-left:5px;" type="button" href="https://telegram.me/share/url?url=&text={{product.link}}"><button>Share on Telegram</button></a>
+        <a style="margin-left:5px;" type="button" href="https://telegram.me/share/url?url={{product.link}}&text=Взято у MyStore"><button>Share on Telegram</button></a>
 
         <button style="margin-left:5px;" (click)="removeProduct(product.id)">remove</button>
         <button style="margin-left:5px;" (click)="likedProducts(product)">like {{product.Likes}}</button>
