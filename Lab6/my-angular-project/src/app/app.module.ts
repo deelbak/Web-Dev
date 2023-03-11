@@ -1,22 +1,35 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { AlbumsComponent } from './albums/albums.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AlbumPhotosComponent } from './album-photos/album-photos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostGalleryComponent } from './post-gallery/post-gallery.component';
+import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'albums', component: AlbumsComponent },
-  { path: 'albums/:id', component: AlbumDetailComponent },
-  { path: 'albums/:id/photos', component: AlbumPhotosComponent },
-];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    NotFoundComponent,
+    PostsComponent,
+    PostDetailComponent,
+    PostGalleryComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppRoutingModule { }
+export class AppModule { }
